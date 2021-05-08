@@ -1,0 +1,8 @@
+2021-05-08 10:58:33,234 - com.Practice.FinalEdurekaProject.testScripts.NewTour -INFO - -----Login-----
+2021-05-08 10:58:33,242 - com.Practice.FinalEdurekaProject.testScripts.NewTour -INFO - Executing method Login
+2021-05-08 10:59:33,514 - com.Practice.FinalEdurekaProject.testScripts.NewTour -INFO - Closing driver...
+2021-05-08 10:59:34,232 - com.Practice.FinalEdurekaProject.testScripts.NewTour -INFO - Driver closed.
+2021-05-08 10:59:52,217 - com.Practice.FinalEdurekaProject.testScripts.NewTour -INFO - -----Login-----
+2021-05-08 10:59:52,218 - com.Practice.FinalEdurekaProject.testScripts.NewTour -INFO - Executing method Login
+2021-05-08 11:00:52,454 - com.Practice.FinalEdurekaProject.testScripts.NewTour -INFO - Closing driver...
+2021-05-08 11:00:53,827 - com.Practice.FinalEdurekaProject.testScripts.NewTour -INFO - Driver closed.

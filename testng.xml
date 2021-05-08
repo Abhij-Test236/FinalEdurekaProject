@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+
+	<test name="Regression test">
+		<classes>
+			<class name="com.Practice.FinalEdurekaProject.testScripts.NewTour" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

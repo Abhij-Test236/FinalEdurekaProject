@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Regression test(failed)">
+    <classes>
+      <class name="com.Practice.FinalEdurekaProject.testScripts.NewTour">
+        <methods>
+          <include name="browserclose"/>
+          <include name="afterSuite"/>
+          <include name="validateCredentials" invocation-numbers="0"/>
+          <include name="init"/>
+          <include name="browser"/>
+          <include name="bookTicket" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.Practice.FinalEdurekaProject.testScripts.NewTour -->
+    </classes>
+  </test> <!-- Regression test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

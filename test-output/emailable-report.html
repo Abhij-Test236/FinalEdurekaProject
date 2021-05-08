@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Regression test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">165.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Regression test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.Practice.FinalEdurekaProject.testScripts.NewTour</td><td><a href="#m1"><b>afterSuite</b>  </a></td><td class="numi">1</td><td>1620451854272</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Regression test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">com.Practice.FinalEdurekaProject.testScripts.NewTour</td><td><a href="#m2"><b>bookTicket</b>  </a></td><td class="numi">1</td><td>1620451713211</td><td class="numi">60216</td></tr><tr class="failedodd"><td><a href="#m3"><b>validateCredentials</b>  </a></td><td class="numi">1</td><td>1620451792215</td><td class="numi">60239</td></tr>
+</table>
+<h1>Regression test</h1>
+<h2 id="m1">com.Practice.FinalEdurekaProject.testScripts.NewTour:afterSuite</h2>
+<div style="padding-left:3em">
+<p>null</p>
+com.itextpdf.layout.renderer.AbstractRenderer.isFirstOnRootArea(AbstractRenderer.java:1940)
+<br/>at com.itextpdf.layout.renderer.LineRenderer.layout(LineRenderer.java:420)
+<br/>at com.itextpdf.layout.renderer.ParagraphRenderer.layout(ParagraphRenderer.java:192)
+<br/>at com.itextpdf.layout.renderer.ParagraphRenderer.getMinMaxWidth(ParagraphRenderer.java:555)
+<br/>at com.itextpdf.layout.renderer.BlockRenderer.getMinMaxWidth(BlockRenderer.java:854)
+<br/>at com.itextpdf.layout.renderer.BlockRenderer.getMinMaxWidth(BlockRenderer.java:854)
+<br/>at com.itextpdf.layout.renderer.BlockRenderer.getMinMaxWidth(BlockRenderer.java:854)
+<br/>at com.itextpdf.layout.renderer.BlockRenderer.getMinMaxWidth(BlockRenderer.java:854)
+<br/>at com.itextpdf.layout.renderer.TableWidths.calculateMinMaxWidths(TableWidths.java:599)
+<br/>at com.itextpdf.layout.renderer.TableWidths.autoLayout(TableWidths.java:106)
+<br/>at com.itextpdf.layout.renderer.TableWidths.layout(TableWidths.java:95)
+<br/>at com.itextpdf.layout.renderer.TableRenderer.calculateColumnWidths(TableRenderer.java:1595)
+<br/>at com.itextpdf.layout.renderer.TableRenderer.layout(TableRenderer.java:242)
+<br/>at com.itextpdf.layout.renderer.BlockRenderer.layout(BlockRenderer.java:201)
+<br/>at com.itextpdf.layout.renderer.RootRenderer.addChild(RootRenderer.java:118)
+<br/>at com.itextpdf.html2pdf.attach.impl.layout.HtmlDocumentRenderer.close(HtmlDocumentRenderer.java:175)
+<br/>at com.itextpdf.layout.Document.close(Document.java:118)
+<br/>at com.itextpdf.html2pdf.HtmlConverter.convertToPdf(HtmlConverter.java:259)
+<br/>at com.itextpdf.html2pdf.HtmlConverter.convertToPdf(HtmlConverter.java:245)
+<br/>at com.itextpdf.html2pdf.HtmlConverter.convertToPdf(HtmlConverter.java:207)
+<br/>at com.itextpdf.html2pdf.HtmlConverter.convertToPdf(HtmlConverter.java:181)
+<br/>at com.itextpdf.html2pdf.HtmlConverter.convertToPdf(HtmlConverter.java:161)
+<br/>at com.Practice.FinalEdurekaProject.utils.HtmlToPdf.convertToPDF(HtmlToPdf.java:12)
+<br/>at com.Practice.FinalEdurekaProject.testScripts.NewTour.afterSuite(NewTour.java:136)
+<br/>19 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.Practice.FinalEdurekaProject.testScripts.NewTour:validateCredentials</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>Abhij236</td>
+<td>Abhij236</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.name: login&apos; (tried for 60 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+<br/>at com.Practice.FinalEdurekaProject.PageObjects.Login.EnterUserName(Login.java:28)
+<br/>at com.Practice.FinalEdurekaProject.testScripts.NewTour.validateCredentials(NewTour.java:108)
+<br/>25 lines not shown
+<p>Caused by no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;login&apos;]&quot;}
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-U4O9J1H&apos;, ip: &apos;192.168.43.238&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Abhishek\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59561}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 824af8e161c8e3fd07417f472a98dfe7
+*** Element info: {Using=name, value=login}</p>
+sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+<br/>at org.openqa.selenium.By$ByName.findElement(By.java:284)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+<br/>at com.Practice.FinalEdurekaProject.PageObjects.Login.EnterUserName(Login.java:28)
+<br/>at com.Practice.FinalEdurekaProject.testScripts.NewTour.validateCredentials(NewTour.java:108)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.Practice.FinalEdurekaProject.testScripts.NewTour:bookTicket</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>Abhij236</td>
+<td>Abhij236</td>
+<td>1</td>
+<td>London</td>
+<td>March</td>
+<td>10</td>
+<td>Paris</td>
+<td>80008676</td>
+<td>Abhishek</td>
+<td>Jaiswal</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="10">
+<p>Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.name: login&apos; (tried for 60 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+<br/>at com.Practice.FinalEdurekaProject.PageObjects.Login.EnterUserName(Login.java:28)
+<br/>at com.Practice.FinalEdurekaProject.testScripts.NewTour.bookTicket(NewTour.java:60)
+<br/>25 lines not shown
+<p>Caused by no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;login&apos;]&quot;}
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-U4O9J1H&apos;, ip: &apos;192.168.43.238&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Abhishek\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59526}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cca3644192f5bcf1315241a39f31dd47
+*** Element info: {Using=name, value=login}</p>
+sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+<br/>at org.openqa.selenium.By$ByName.findElement(By.java:284)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+<br/>at com.Practice.FinalEdurekaProject.PageObjects.Login.EnterUserName(Login.java:28)
+<br/>at com.Practice.FinalEdurekaProject.testScripts.NewTour.bookTicket(NewTour.java:60)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
